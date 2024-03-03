@@ -15,7 +15,7 @@ function App() {
     if (savedObject !== null) {
       return JSON.parse(savedObject);
     }
-    return {};
+    return { good: 0, bad: 0, neutral: 0 };
   });
 
   useEffect(() => {
